@@ -1,8 +1,8 @@
 <Do it! 쉽게 배우는 R 데이터 분석> 저장소
 ---
-- [Data](https://github.com/youngwoos/Doit_R/tree/master/Data) 폴더에서 실습에 사용할 데이터를 다운로드할 수 있습니다.
-- [Script](https://github.com/youngwoos/Doit_R/tree/master/Script) 폴더에는 본문에 사용된 R 스크립트와 퀴즈, 분석 도전의 정답 스크립트가 들어있습니다.
-- [한국복지패널데이터](https://github.com/youngwoos/Doit_R/tree/master/한국복지패널데이터) 폴더에는 [한국복지패널](https://www.koweps.re.kr:442/main.do)에서 공개한 데이터와 관련 자료들이 들어있습니다.
+- [Data](https://github.com/youngwoos/Doit_R/tree/master/Data) 폴더에 실습에 사용할 데이터 파일이 들어있습니다.
+- [Script](https://github.com/youngwoos/Doit_R/tree/master/Script) 폴더에 본문에 사용된 R 스크립트와 퀴즈, 분석 도전의 정답 스크립트가 들어있습니다.
+- [한국복지패널데이터](https://github.com/youngwoos/Doit_R/tree/master/한국복지패널데이터) 폴더에 [한국복지패널](https://www.koweps.re.kr:442/main.do)에서 공개한 데이터와 관련 자료들이 들어있습니다.
 
 
 ## 질문하기
