@@ -3,8 +3,7 @@
 - [Data](https://github.com/youngwoos/Doit_R/tree/master/Data) 폴더에 실습에 사용할 데이터 파일이 들어있습니다.
 
 - 한국복지패널데이터는 아래 링크를 통해 다운받을 수 있습니다.
-
-[Koweps_hpc10_2015_beta1.sav](http://bit.ly/Koweps_hpc10_2015)
+    + [Koweps_hpc10_2015_beta1.sav](http://bit.ly/Koweps_hpc10_2015)
 - [Script](https://github.com/youngwoos/Doit_R/tree/master/Script) 폴더에 본문에 사용된 R 스크립트와 퀴즈, 분석 도전의 정답 스크립트가 들어있습니다.
 
 ## 질문하기
