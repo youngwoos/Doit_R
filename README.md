@@ -12,4 +12,4 @@
 깃허브의 [이슈](https://github.com/youngwoos/Doit_R/issues/1)에 질문을 올려주셔도 좋습니다.
 
 ## 기타 문의
-다른 문의 사항은 stats7445@gmail.com로 메일을 보내주세요.
+다른 문의 사항은 stats7445@gmail.com으로 메일을 보내주세요.
