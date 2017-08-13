@@ -123,4 +123,3 @@ qplot(data = mpg, x = drv, y = hwy, geom = "boxplot", colour = drv)
 
 # qplot 함수 매뉴얼 출력
 ?qplot
-
