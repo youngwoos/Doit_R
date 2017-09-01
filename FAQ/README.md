@@ -1,4 +1,4 @@
-﻿FAQ
+FAQ
 ---
-
-# 자주 묻는 질문
+- [맥에서 불러들인 파일의 문자가 깨질 때](https://github.com/youngwoos/Doit_R/blob/master/FAQ/Mac_TextEncodingError.Rmd)
+- [맥에서 그래프의 한글이 깨질 때](https://github.com/youngwoos/Doit_R/blob/master/FAQ/Mac_GraphTextError.Rmd)
