@@ -1,0 +1,5 @@
+## 맥에서 `rJava` 설치 경로 설정하기
+
+아래 코드를 이용해 자바 설치 경로를 지정한 후 `KoNLP` 등 `rJava`를 이용하는 패키지를 로드하세요. 설치 경로는 자바의 버전이나 OS에 따라 다를 수 있으니 확인한 후 자신의 환경에 맞게 설정하세요.
+
+`dyn.load('/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/server/libjvm.dylib')`
