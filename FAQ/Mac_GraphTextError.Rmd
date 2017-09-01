@@ -1,0 +1,14 @@
+## 맥에서 그래프의 한글 문자가 깨질 때
+
+아래 코드를 이용해 맥에서 지원하는 폰트를 지정한 후 그래프를 생성하면 한글이 깨지지 않고 출력됩니다.
+
+### `ggplot2`로 그래프를 생성할 경우
+
+`theme_set(theme_gray(base_family="AppleGothic"))`
+
+### 내장 그래프 함수 또는 `wordcloud()`로 그래프를 생성할 경우
+
+`par(family = "AppleGothic")`
+
+
+
