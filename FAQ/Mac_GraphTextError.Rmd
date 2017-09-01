@@ -6,7 +6,7 @@
 
 `theme_set(theme_gray(base_family="AppleGothic"))`
 
-### 내장 그래프 함수 또는 `wordcloud()`로 그래프를 생성할 경우
+### `wordcloud()` 또는 내장 그래프 함수로 그래프를 생성할 경우
 
 `par(family = "AppleGothic")`
 
