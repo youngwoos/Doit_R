@@ -35,6 +35,8 @@ RMD 파일을 수정할 경우, 워드 파일을 생성한 후 아래 절차에 
 
 RMD 파일을 열어보시면 페이지 넘김 표시 `##### NP #####`가 삽입되어 있습니다. 마크다운 5단계 헤더를 워드 스타일을 이용해 페이지 넘김 기능으로 활용하기 위해 삽입한 것입니다. 워드 파일을 생성하면 페이지 넘김 표시가 NP 로 출력되는데, `WordTemplate.dotx`를 이용해 스타일을 적용하면 해당 부분에서 페이지가 넘어갑니다.
 
+- 참고 : [R Markdown: How to insert page breaks in a MS Word document](https://datascienceplus.com/r-markdown-how-to-insert-page-breaks-in-a-ms-word-document/)
+
 자료와 관련하여 궁금한 사항이 있으시면 메일로 문의해주세요.
 
 stats7445@gmail.com
