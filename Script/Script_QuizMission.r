@@ -228,7 +228,7 @@ boxplot(mpg$cty)
 mpg %>%
   filter(!is.na(drv) & !is.na(cty)) %>%  # 결측치 제외
   group_by(drv) %>%                      # drv별 분리
-  summarise(mean_hwy = mean(cty))        # cty 평균 구하기
+  summarise(mean_cty = mean(cty))        # cty 평균 구하기
 
 
 ## -------------------------------------------------------------------- ##
