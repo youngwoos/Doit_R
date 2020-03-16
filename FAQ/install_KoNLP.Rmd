@@ -6,6 +6,7 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ```
 
+test
 
 현재 `KoNLP` 패키지가 CRAN에서 삭제된 상태라 `install.packages()`를 이용해 설치할 수 없습니다. 아래 코드를 이용해 깃헙 버전을 설치하면 정상적으로 `KoNLP` 패키지를 이용할 수 있습니다.
 
