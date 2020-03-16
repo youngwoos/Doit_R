@@ -1,5 +1,6 @@
 FAQ
 ---
+- [KoNLP 패키지 설치하기](http://bit.ly/install_konlp)
 - [맥에서 불러들인 파일의 문자가 깨질 때](http://bit.ly/2mhQWeR)
 - [맥에서 그래프의 한글이 깨질 때](http://bit.ly/2leaxfG)
 - [맥에서 Java 설정하기](http://bit.ly/2mGlIhr)
