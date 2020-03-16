@@ -45,6 +45,7 @@ library(dplyr)
 korpop1 <- rename(korpop1,
                   pop = 총인구_명,
                   name = 행정구역별_읍면동)
+korpop1$name <- iconv(korpop1$name, "UTF-8", "CP949")
 
 str(changeCode(kormap1))
 
@@ -58,6 +59,8 @@ ggChoropleth(data = korpop1,       # 지도에 표현할 데이터
 
 ## -------------------------------------------------------------------- ##
 str(changeCode(tbc))
+
+tbc$name <- iconv(tbc$name, "UTF-8", "CP949")
 
 ggChoropleth(data = tbc,           # 지도에 표현할 데이터
              aes(fill = NewPts,    # 색깔로 표현할 변수
