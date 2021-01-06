@@ -6,6 +6,7 @@
 - ② `Raw` 버튼 또는 `Download` 버튼 마우스 오른쪽 클릭
 - ③ [다른 이름으로 링크 저장] 클릭
 
+## 주요 파일
 파일           | 내용
 :------------- |:-------------
 [excel_exam.xlsx](https://github.com/youngwoos/Doit_R/blob/master/Data/excel_exam.xlsx) | 04-3절. 엑셀 파일
