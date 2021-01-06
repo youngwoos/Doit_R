@@ -1,7 +1,7 @@
 <Do it! 쉽게 배우는 R 데이터 분석> 저장소
 ---
 
-![](cover.png)
+![](cover2.png)
 
 <img src="cover_big.png" width="400">
 
