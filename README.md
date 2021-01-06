@@ -1,5 +1,23 @@
 <Do it! 쉽게 배우는 R 데이터 분석> 저장소
 ---
+
+![](cover.png)
+
+---
+
+폴더           | 내용
+:------------- |:-------------
+[Data](https://github.com/youngwoos/Doit_R/blob/main/Data) | 실습 데이터 파일
+[Script](https://github.com/youngwoos/Doit_R/blob/main/Script) | 본문 R 스크립트, 분석 도전 정답
+[Lecture](https://github.com/youngwoos/Doit_R/blob/main/Lecture) | 강의용 프리젠테이션 자료
+
+- 한국복지패널데이터는 아래 링크를 통해 다운받을 수 있습니다.
+    + [Koweps_hpc10_2015_beta1.sav](http://bit.ly/Koweps_hpc10_2015_v2)
+    
+- 저장소의 모든 자료를 한 번에 다운로드하려면 다음 [링크](https://github.com/youngwoos/Doit_R/archive/main.zip)를 클릭하세요.
+
+---
+
 - [Data](https://github.com/youngwoos/Doit_R/tree/master/Data) 폴더에 실습에 필요한 데이터 파일이 들어있습니다.
 
 - 한국복지패널데이터는 아래 링크를 통해 다운받을 수 있습니다.
