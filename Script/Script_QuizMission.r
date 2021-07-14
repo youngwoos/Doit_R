@@ -165,8 +165,7 @@ mpg %>%
 
 ## Q1
 fuel <- data.frame(fl = c("c", "d", "e", "p", "r"),
-                   price_fl = c(2.35, 2.38, 2.11, 2.76, 2.22),
-                   stringsAsFactors = F)
+                   price_fl = c(2.35, 2.38, 2.11, 2.76, 2.22))
 fuel
 
 mpg <- as.data.frame(ggplot2::mpg)      # mpg 데이터 불러오기

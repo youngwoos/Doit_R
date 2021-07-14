@@ -92,7 +92,6 @@ wordcloud(words = df_word$word,    # 단어
 # 데이터 로드
 twitter <- read.csv("twitter.csv",
                     header = T,
-                    stringsAsFactors = F,
                     fileEncoding = "UTF-8")
 
 # 변수명 수정
@@ -113,7 +112,7 @@ nouns <- extractNoun(twitter$tw)
 wordcount <- table(unlist(nouns))
 
 # 데이터 프레임으로 변환
-df_word <- as.data.frame(wordcount, stringsAsFactors = F)
+df_word <- as.data.frame(wordcount)
 
 # 변수명 수정
 df_word <- rename(df_word,

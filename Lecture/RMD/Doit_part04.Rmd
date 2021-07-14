@@ -177,13 +177,6 @@ df_csv_exam
 
 ##### NP #####
 
-#### 문자가 들어 있는 파일을 불러올 때는 `stringsAsFactors = F`
-```{r, eval=F}
-df_csv_exam <- read.csv("csv_exam.csv", stringsAsFactors = F)
-```
-
-##### NP #####
-
 ### 데이터 프레임을 CSV 파일로 저장하기
 ```{r}
 df_midterm <- data.frame(english = c(90, 80, 60, 70),
