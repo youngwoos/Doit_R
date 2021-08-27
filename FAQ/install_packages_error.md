@@ -81,7 +81,7 @@ RStudio에서 다음 코드를 실행해 설치 경로를 지정합니다.
 
     ## [1] "C:/RProject/library"                "C:/Program Files/R/R-4.1.0/library"
 
-이제 `install.packages()`를 이용하면 정상적으로 패키지가 설치됩니다.
+이제 `install.packages()`를 실행하면 정상적으로 패키지가 설치됩니다.
 
 ##### 3. `Rprofile.site` 파일 수정하기
 
@@ -109,4 +109,4 @@ RStudio를 실행한 다음 `.libPaths()`를 실행해 패키지 경로가 자�
 
     ## [1] "C:/RProject/library"                "C:/Program Files/R/R-4.1.0/library"
 
-이제 `install.packages()`를 이용하면 정상적으로 패키지가 설치됩니다.
+이제 `install.packages()`를 실행하면 정상적으로 패키지가 설치됩니다.
