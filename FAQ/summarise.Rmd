@@ -222,7 +222,7 @@ mpg %>%
   mutate(t_tot = sum(tot))
 ```
 
-##### \# `"rowwise"`: 열을 행처럼 취급
+##### `"rowwise"`: 열을 행처럼 취급
 
 ```{r}
 mpg %>%
