@@ -285,8 +285,8 @@ mpg %>%
 
 `"rowwise"`는 각 열을 행처럼 취급하도록 그룹 정보를 유지합니다. 아래
 코드의 출력 결과는 `.groups`에`"keep"`을 입력했을 때와 같지만
-`# Rowwise: drv, class`를 보면 `drv`와 `class` 변수가 하나의 행으로
-취급됨을 알 수 있습니다.
+`# Rowwise: drv, class`를 보면 `drv`와 `class` 변수가 행으로 취급됨을 알
+수 있습니다.
 
 ``` r
 mpg %>%
@@ -333,7 +333,7 @@ mpg %>%
     ## 2 f      2985  2117  5102
     ## 3 r       525   352   877
 
-`.groups = "rowwise"`를 입력하지 않으면 (1)`drv`별로 `sum(hwy)`과
+`.groups = "rowwise"`를 입력하지 않으면 (1) `drv`별로 `sum(hwy)`과
 `sum(cty)`를 구한 다음 (2)행 방향으로 `hwy`와 `cty`의 `sum()`을 구하고
 (3)이렇게 구한 값을 다시 `sum()` 하는 절차로 연산하므로 그룹에 관계 없이
 `tot`의 값이 같습니다.
@@ -378,7 +378,7 @@ mpg %>%
     ## 2 f      2985  2117    5485    3945  9430
     ## 3 r       525   352    5485    3945  9430
 
-`group_by(drv)`를 제외해도 `tot`의 값은 같습니다.
+`group_by(drv)`를 제외해도 `tot`의 값이 같습니다.
 
 ``` r
 mpg %>%
@@ -412,10 +412,11 @@ mpg %>%
     ## 2 f      2985  2117  5102
     ## 3 r       525   352   877
 
-#### `.groups` 설정 비교
+### `.groups` 설정 비교
+
+##### 기본형
 
 ``` r
-# 기본형
 mpg %>%
   group_by(drv, class) %>%
   summarise(tot = sum(hwy)) %>% 
@@ -441,8 +442,9 @@ mpg %>%
     ## 11 r     subcompact   209   525
     ## 12 r     suv          192   525
 
+##### `"drop_last"`: 마지막 변수 제외하고 그룹 유지
+
 ``` r
-# "drop_last": 마지막 변수 제외하고 그룹 유지
 mpg %>%
   group_by(drv, class) %>%
   summarise(tot = sum(hwy), .groups = "drop_last") %>% 
@@ -466,8 +468,9 @@ mpg %>%
     ## 11 r     subcompact   209   525
     ## 12 r     suv          192   525
 
+##### `"keep"`: 모든 변수를 이용해 그룹 유지
+
 ``` r
-# "keep": 모든 변수를 이용해 그룹 유지
 mpg %>%
   group_by(drv, class) %>%
   summarise(tot = sum(hwy), .groups = "keep") %>% 
@@ -491,8 +494,9 @@ mpg %>%
     ## 11 r     subcompact   209   209
     ## 12 r     suv          192   192
 
+##### `"drop"`: 그룹 해제
+
 ``` r
-# "drop": 그룹 해제
 mpg %>%
   group_by(drv, class) %>%
   summarise(tot = sum(hwy), .groups = "drop") %>% 
@@ -515,8 +519,9 @@ mpg %>%
     ## 11 r     subcompact   209  5485
     ## 12 r     suv          192  5485
 
+##### # `"rowwise"`: 열을 행처럼 취급
+
 ``` r
-# "rowwise": 열을 행처럼 취급
 mpg %>%
   group_by(drv, class) %>%
   summarise(tot = sum(hwy), .groups = "rowwise") %>% 
