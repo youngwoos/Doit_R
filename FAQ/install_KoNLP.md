@@ -1,10 +1,17 @@
 
 ## KoNLP 패키지 설치하기
 
-현재 `KoNLP` 패키지가 CRAN에서 삭제된 상태라 `install.packages()`를 이용해 설치할 수 없습니다. 아래
-코드를 순서대로 실행하면 깃헙 버전 `KoNLP` 패키지를 설치할 수 있습니다.
+`KoNLP` 패키지는 R 4.1.3 이하 버전에서 정상 작동합니다. 아래 페이지에서
+R 설치 파일을 다운로드할 수 있습니다.
 
-#### 1\. java와 rJava 설치
+-   윈도우 : <https://cran.r-project.org/bin/windows/base/old/>
+-   맥 : <https://cloud.r-project.org/bin/macosx/old/>
+
+`KoNLP` 패키지가 CRAN에서 삭제된 상태라 `install.packages()`를 이용해
+설치할 수 없습니다. 아래 코드를 순서대로 실행하면 깃헙 버전 `KoNLP`
+패키지를 설치할 수 있습니다.
+
+#### 1. java와 rJava 설치
 
 ``` r
 install.packages("multilinguer")
@@ -12,13 +19,13 @@ library(multilinguer)
 install_jdk()
 ```
 
-#### 2\. KoNLP 의존성 패키지 설치
+#### 2. KoNLP 의존성 패키지 설치
 
 ``` r
 install.packages(c("stringr", "hash", "tau", "Sejong", "RSQLite", "devtools"), type = "binary")
 ```
 
-#### 3\. 깃헙 버전 KoNLP 설치
+#### 3. 깃헙 버전 KoNLP 설치
 
 ``` r
 install.packages("remotes")
