@@ -53,9 +53,3 @@ remotes::install_github("haven-jeon/KoNLP",
 library(KoNLP)
 extractNoun("대한민국의 주권은 국민에게 있고, 모든 권력은 국민으로부터 나온다.")
 ```
-
----
-
-#### 참고
-
-[KoNLP 설치 이슈 공유, 박찬엽](https://www.facebook.com/notes/r-korea-krugkorean-r-user-group/konlp-설치-이슈-공유/1847510068715020/)
