@@ -13,6 +13,8 @@ R 설치 파일을 다운로드할 수 있습니다.
 
 #### 1. java와 rJava 설치
 
+Amazon Corretto Java를 설치합니다.
+
 ``` r
 install.packages("multilinguer")
 library(multilinguer)
@@ -21,11 +23,15 @@ install_jdk()
 
 #### 2. KoNLP 의존성 패키지 설치
 
+`KoNLP` 의존성 패키지를 설치합니다.
+
 ``` r
 install.packages(c("stringr", "hash", "tau", "Sejong", "RSQLite", "devtools"), type = "binary")
 ```
 
 #### 3. 깃헙 버전 KoNLP 설치
+
+깃헙 버전 `KoNLP` 패키지를 설치합니다.
 
 ``` r
 install.packages("remotes")
@@ -33,6 +39,24 @@ remotes::install_github("haven-jeon/KoNLP",
                         upgrade = "never",
                         INSTALL_opts=c("--no-multiarch"))
 ```
+
+#### KoNLP 실행 확인
+
+`KoNLP` 패키지가 작동하는지 확인합니다.
+
+``` r
+library(KoNLP)
+```
+
+    ## Checking user defined dictionary!
+
+``` r
+extractNoun("대한민국의 주권은 국민에게 있고, 모든 권력은 국민으로부터 나온다.")
+```
+
+    ## [1] "대한민국" "주권"     "국민"     "권력"     "국민"
+
+------------------------------------------------------------------------
 
 #### 참고
 
