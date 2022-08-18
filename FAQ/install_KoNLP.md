@@ -1,16 +1,13 @@
 
 ## KoNLP 패키지 설치하기
 
-`KoNLP` 패키지는 R 4.1.3 이하 버전에서 정상 작동합니다. 아래 페이지에서
-R 4.1.3 설치 파일을 다운로드할 수 있습니다.
+<!-- `KoNLP` 패키지는 R 4.1.3 이하 버전에서 정상 작동합니다. 아래 페이지에서 R 4.1.3 설치 파일을 다운로드할 수 있습니다. -->
+<!-- - 윈도우: https://cran.r-project.org/bin/windows/base/old/4.1.3/R-4.1.3-win.exe -->
+<!-- - 맥: https://cran.r-project.org/bin/macosx/base/R-4.1.3.pkg -->
 
--   윈도우:
-    <https://cran.r-project.org/bin/windows/base/old/4.1.3/R-4.1.3-win.exe>
--   맥: <https://cran.r-project.org/bin/macosx/base/R-4.1.3.pkg>
-
-`KoNLP` 패키지가 CRAN에서 삭제된 상태라 `install.packages()`를 이용해
-설치할 수 없습니다. 아래 코드를 순서대로 실행하면 깃헙 버전 `KoNLP`
-패키지를 설치할 수 있습니다.
+`KoNLP` 패키지가 CRAN에서 삭제되어 `install.packages()`를 이용해 설치할
+수 없습니다. 아래 코드를 순서대로 실행하면 깃헙 버전 `KoNLP` 패키지를
+설치할 수 있습니다.
 
 #### 1. java와 rJava 설치
 
@@ -41,7 +38,7 @@ remotes::install_github("haven-jeon/KoNLP",
                         INSTALL_opts=c("--no-multiarch"))
 ```
 
-#### KoNLP 실행 확인
+#### 4. KoNLP 실행 확인
 
 `KoNLP` 패키지가 작동하는지 확인합니다.
 
@@ -56,3 +53,14 @@ extractNoun("대한민국의 주권은 국민에게 있고, 모든 권력은 국
 ```
 
     ## [1] "대한민국" "주권"     "국민"     "권력"     "국민"
+
+#### 5. `Fail to locate 'scala-library-2.11.8.jar'` 에러 해결하기
+
+`KoNLP` 설치 중 `Fail to locate 'scala-library-2.11.8.jar'` 에러가
+발생하면 다음 코드를 실행합니다. 그런 다음 RStudio를 재실행한 후 `KoNLP`
+패키지가 작동하는지 확인합니다.
+
+``` r
+download.file(url = "https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar",
+              destfile = paste0(.libPaths()[1], "/KoNLP/Java/scala-library-2.11.8.jar"))
+```
