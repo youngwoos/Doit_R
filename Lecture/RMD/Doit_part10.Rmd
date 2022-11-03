@@ -113,7 +113,7 @@ wordcount <- table(unlist(nouns))
 #### 자주 사용된 단어 빈도표 만들기
 ```{r}
 # 데이터 프레임으로 변환
-df_word <- as.data.frame(wordcount, stringsAsFactors = F)
+df_word <- as.data.frame(wordcount)
 
 # 변수명 수정
 df_word <- rename(df_word,
@@ -241,7 +241,7 @@ nouns <- extractNoun(twitter$tw)
 wordcount <- table(unlist(nouns))
 
 # 데이터 프레임으로 변환
-df_word <- as.data.frame(wordcount, stringsAsFactors = F)
+df_word <- as.data.frame(wordcount)
 
 # 변수명 수정
 df_word <- rename(df_word,

@@ -292,8 +292,8 @@ religion_marriage <- welfare %>%
   filter(!is.na(group_marriage)) %>%
   group_by(religion, group_marriage) %>%
   summarise(n = n()) %>%
-  mutate(tot_group = sum(n)) %>%
-  mutate(pct = round(n/tot_group*100, 1))
+  mutate(tot_group = sum(n),
+         pct = round(n/tot_group*100, 1))
 
 religion_marriage
 
@@ -318,8 +318,8 @@ ageg_marriage <- welfare %>%
   filter(!is.na(group_marriage)) %>%
   group_by(ageg, group_marriage) %>%
   summarise(n = n()) %>%
-  mutate(tot_group = sum(n)) %>%
-  mutate(pct = round(n/tot_group*100, 1))
+  mutate(tot_group = sum(n),
+         pct = round(n/tot_group*100, 1))
 
 ageg_marriage
 
@@ -346,8 +346,8 @@ ageg_religion_marriage <- welfare %>%
   filter(!is.na(group_marriage) & ageg != "young") %>%
   group_by(ageg, religion, group_marriage) %>%
   summarise(n = n()) %>%
-  mutate(tot_group = sum(n)) %>%
-  mutate(pct = round(n/tot_group*100, 1))
+  mutate(tot_group = sum(n),
+         pct = round(n/tot_group*100, 1))
 
 ageg_religion_marriage
 
@@ -398,8 +398,8 @@ welfare %>%
 region_ageg <- welfare %>%
   group_by(region, ageg) %>%
   summarise(n = n()) %>%
-  mutate(tot_group = sum(n)) %>% 
-  mutate(pct = round(n/tot_group*100, 2))
+  mutate(tot_group = sum(n),
+         pct = round(n/tot_group*100, 2))
 
 head(region_ageg)
 

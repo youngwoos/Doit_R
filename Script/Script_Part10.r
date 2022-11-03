@@ -36,7 +36,7 @@ nouns <- extractNoun(txt)
 wordcount <- table(unlist(nouns))
 
 # 데이터 프레임으로 변환
-df_word <- as.data.frame(wordcount, stringsAsFactors = F)
+df_word <- as.data.frame(wordcount)
 
 # 변수명 수정
 df_word <- rename(df_word,

@@ -38,16 +38,14 @@ install.packages("devtools")
 devtools::install_github("cardiomoon/kormaps2014")
 
 library(kormaps2014)
-
-str(changeCode(korpop1))
+str(korpop1)
 
 library(dplyr)
 korpop1 <- rename(korpop1,
                   pop = 총인구_명,
                   name = 행정구역별_읍면동)
-korpop1$name <- iconv(korpop1$name, "UTF-8", "CP949")
 
-str(changeCode(kormap1))
+str(kormap1)
 
 ggChoropleth(data = korpop1,       # 지도에 표현할 데이터
              aes(fill = pop,       # 색깔로 표현할 변수
@@ -58,9 +56,7 @@ ggChoropleth(data = korpop1,       # 지도에 표현할 데이터
 
 
 ## -------------------------------------------------------------------- ##
-str(changeCode(tbc))
-
-tbc$name <- iconv(tbc$name, "UTF-8", "CP949")
+str(tbc)
 
 ggChoropleth(data = tbc,           # 지도에 표현할 데이터
              aes(fill = NewPts,    # 색깔로 표현할 변수
@@ -68,4 +64,3 @@ ggChoropleth(data = tbc,           # 지도에 표현할 데이터
                  tooltip = name),  # 지도 위에 표시할 지역명
              map = kormap1,        # 지도 데이터
              interactive = T)      # 인터랙티브
-
