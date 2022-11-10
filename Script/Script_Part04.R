@@ -68,11 +68,11 @@ write.csv(df_midterm, file = "df_midterm.csv")
 
 
 ## -------------------------------------------------------------------- ##
-save(df_midterm, file = "df_midterm.rda")
+saveRDS(df_midterm, file = "df_midterm.rds")
 
 rm(df_midterm)
 
-load("df_midterm.rda")
+df_midterm <- readRDS("df_midterm.rds") 
 
 
 ## -------------------------------------------------------------------- ##
@@ -91,7 +91,7 @@ df_exam <- read_excel("excel_exam.xlsx")        # 엑셀 파일 불러오기
 df_csv_exam <- read.csv("csv_exam.csv")         # CSV 파일 불러오기
 write.csv(df_midterm, file = "df_midterm.csv")  # CSV 파일로 저장하기
 
-# Rda 파일
-load("df_midterm.rda")                          # Rda 파일 불러오기
-save(df_midterm, file = "df_midterm.rda")       # Rda 파일로 저장하기
+# RDS 파일
+df_midterm <- readRDS("df_midterm.rds")         # RDS 파일 불러오기
+saveRDS(df_midterm, file = "df_midterm.rds")    # RDS 파일로 저장하기
 
