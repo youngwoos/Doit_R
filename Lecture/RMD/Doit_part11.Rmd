@@ -9,6 +9,7 @@ output:
 Sys.setenv("LANGUAGE"="EN")
 library(dplyr)
 library(ggplot2)
+knitr::opts_chunk$set(fig.retina = 3)
 ```
 
 # 11. 지도 시각화
@@ -48,10 +49,14 @@ library(tibble)
 
 # 행 이름을 state 변수로 바꿔 데이터 프레임 생성
 crime <- rownames_to_column(USArrests, var = "state")
+```
 
+
+##### NP #####
+
+```{r}
 # 지도 데이터와 동일하게 맞추기 위해 state의 값을 소문자로 수정
 crime$state <- tolower(crime$state)
-
 str(crime)
 ```
 
@@ -84,6 +89,13 @@ ggChoropleth(data = crime,         # 지도에 표현할 데이터
              interactive = T)      # 인터랙티브
 ```
 
+```{r echo=F}
+ggChoropleth(data = crime,         # 지도에 표현할 데이터
+             aes(fill = Murder,    # 색깔로 표현할 변수
+                 map_id = state),  # 지역 기준 변수
+             map = states_map)     # 지도 데이터
+```
+
 ##### NP #####
 
 ## 11-2. 대한민국 시도별 인구, 결핵 환자 수 단계 구분도 만들기
@@ -105,8 +117,14 @@ library(kormaps2014)
 ##### NP #####
 
 #### 대한민국 시도별 인구 데이터 준비하기
-```{r}
-str(changeCode(korpop1))
+
+```{r, eval = F}
+str(korpop1)
+
+```
+
+```{r echo=F}
+str(korpop1, width = 60, strict.width = "cut")
 
 ```
 
@@ -117,8 +135,15 @@ library(dplyr)
 korpop1 <- rename(korpop1,
                   pop = 총인구_명,
                   name = 행정구역별_읍면동)
+```
 
-str(changeCode(kormap1))
+
+```{r eval=F}
+str(kormap1)
+```
+
+```{r echo=F}
+str(kormap1, width = 60, strict.width = "cut")
 ```
 
 ##### NP #####
@@ -150,13 +175,13 @@ ggChoropleth(data = korpop1,       # 지도에 표현할 데이터
 ### 대한민국 시도별 결핵 환자 수 단계 구분도 만들기
 
 <!-- 출력용 -->
-```{r, eval=F}
-str(changeCode(tbc))
+```{r eval=F}
+str(tbc)
 ```
 
-<!-- 실행용 -->
 ```{r, echo=F}
-str(changeCode(tbc))
+str(tbc, width = 60, strict.width = "cut")
+
 ```
 
 ##### NP #####
