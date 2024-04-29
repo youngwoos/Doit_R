@@ -57,16 +57,7 @@ download.file(
 `KoNLP` 패키지가 사용하는 'NIA 사전'은 120만여 개 단어로 구성되어 있습니다. 형태소 분석을 할 때 NIA 사전을 사용하도록 `useNIADic()`을 실행합니다.
 
 
-<!-- 출력 -->
-
-```{r, eval=FALSE}
-library(KoNLP)
-useNIADic()
-```
-
-<!-- 실행, 메시지 출력 안함 -->
-
-```{r, echo=FALSE, warning=F, message=F}
+```{r, eval=T, echo=T, warning=F, message=F}
 library(KoNLP)
 useNIADic()
 ```
@@ -76,7 +67,7 @@ useNIADic()
 
 `KoNLP` 패키지가 잘 작동하는지 확인합니다.
 
-```{r}
+```{r, eval=T}
 extractNoun("대한민국의 주권은 국민에게 있고, 모든 권력은 국민으로부터 나온다.")
 ```
 

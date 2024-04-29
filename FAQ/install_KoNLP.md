@@ -62,14 +62,13 @@ download.file(
 있습니다. 형태소 분석을 할 때 NIA 사전을 사용하도록 `useNIADic()`을
 실행합니다.
 
-<!-- 출력 -->
-
 ``` r
 library(KoNLP)
 useNIADic()
 ```
 
-<!-- 실행, 메시지 출력 안함 -->
+    ## Backup was just finished!
+    ## 1213109 words dictionary was built.
 
 #### 6. KoNLP 실행 확인
 
@@ -78,3 +77,5 @@ useNIADic()
 ``` r
 extractNoun("대한민국의 주권은 국민에게 있고, 모든 권력은 국민으로부터 나온다.")
 ```
+
+    ## [1] "대한민국" "주권"     "국민"     "권력"     "국민"
